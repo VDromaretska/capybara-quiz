@@ -4,14 +4,24 @@
     height: 100vh;
 }
 
-.App {
+* {
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background: #202731;
+    overflow-x: hidden;
+}
+/* .App {
     padding: 2rem;
     font-family: sans-serif;
     display: grid;
     place-items: center;
     height: 50vh;
     border: 2px solid gray;
-}
+} */
 
 button {
     margin: 0.5rem;
@@ -19,7 +29,61 @@ button {
     font-size: 1rem;
 }
 
-.eliminated {
-    text-decoration: line-through;
-    opacity: 0.5;
+h1 {
+    padding: 5px 10vw;
+}
+h2 {
+    padding: 5px 10vw;
+}
+p {
+    padding: 5px 10vw;
+}
+.smth {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 700px;
+    padding-top: 100px;
+}
+.blue {
+    background-color: #3c31dd;
+    overflow: hidden;
+}
+.pink {
+    background: #e76f9f;
+    overflow: hidden;
+}
+
+.footer {
+    background-color: #202731;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50px;
+    /* padding: 5px 10vw; */
+    bottom: 0;
+}
+.custom-shape-divider-bottom-1692616734 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1692616734 svg {
+    position: relative;
+    display: block;
+    width: calc(175% + 1.3px);
+    height: 231px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1692616734 .shape-fill {
+    fill: #202731;
 }
