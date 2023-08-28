@@ -7,14 +7,8 @@ body {
     color: white;
     text-align: center;
     background: #3c31dd;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
-
-/* button {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    font-size: 1rem;
-} */
 
 h1 {
     padding: 5px 10vw;
@@ -36,13 +30,8 @@ p {
 }
 
 .footer {
-    background-color: #c923f5;
     position: absolute;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 30px;
     bottom: 0;
 }
 .custom-shape-divider-bottom-1692616734 {
