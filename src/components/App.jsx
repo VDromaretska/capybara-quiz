@@ -13,6 +13,18 @@ export default function App() {
     const handleChilled = () => {
         setCurrentTree(currentTree.chilledSubtree);
     };
+    const handleHungry = () => {
+        setCurrentTree(currentTree.hungrySubtree);
+    };
+    const handleSleepy = () => {
+        setCurrentTree(currentTree.sleepySubtree);
+    };
+    const handleWorking = () => {
+        setCurrentTree(currentTree.workingSubtree);
+    };
+    const handleHappy = () => {
+        setCurrentTree(currentTree.happySubtree);
+    };
     const handleYes = () => {
         setCurrentTree(currentTree.yesSubtree);
     };
@@ -21,26 +33,48 @@ export default function App() {
     };
     return (
         <div>
-            <div className="smth blue">
+            <div className="section-blue">
                 <h1>Welcome to which capybara are you today quiz!</h1>
                 <h2>Start with picking your mood </h2>
                 {currentTree.kind === "first question" && (
                     <div>
                         <p>{question}</p>
-                        <button onClick={() => handleChilled()}>chilled</button>
+                        <div className="button-container">
+                            <button onClick={() => handleChilled()}>
+                                chilled
+                            </button>
+                            <button onClick={() => handleHungry()}>
+                                hungry
+                            </button>
+                            <button onClick={() => handleSleepy()}>
+                                sleepy
+                            </button>
+                            <button onClick={() => handleWorking()}>
+                                working
+                            </button>
+                            <button onClick={() => handleHappy()}>happy</button>
+                        </div>
                     </div>
                 )}
                 {currentTree.kind === "question" && (
                     <div>
                         <p>{question}</p>
-                        <button onClick={() => handleYes()}>Yes</button>
-                        <button onClick={() => handleNo()}>No</button>
+                        <div className="button-container">
+                            <button onClick={() => handleYes()}>Yes</button>
+                            <button onClick={() => handleNo()}>No</button>
+                        </div>
                     </div>
                 )}
                 {currentTree.kind === "answer" && (
                     <div>
-                        <p>Congrats!</p>
-                        <img src={currentTree.img} alt="another capy image" />
+                        <p>Congrats! We found your picture.</p>
+                        <div className="image-container">
+                            <img
+                                src={currentTree.img}
+                                alt="another capy image"
+                                className="centered-image"
+                            />
+                        </div>
                     </div>
                 )}
                 <div className="custom-shape-divider-bottom-1692616734">
@@ -67,7 +101,6 @@ export default function App() {
                     </svg>
                 </div>
             </div>
-            {/* <div className="smth"></div> */}
 
             <div className="footer">
                 <p>

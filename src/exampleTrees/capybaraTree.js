@@ -38,5 +38,45 @@ export default function createCapyTree() {
                 },
             },
         },
+        hungrySubtree: {
+            kind: "question",
+            question: "Do you like fruits?",
+            yesSubtree: {
+                kind: "answer",
+                img: "https://api.capy.lol/v1/capybara/132",
+            },
+            noSubtree: {
+                kind: "answer",
+                img: "https://api.capy.lol/v1/capybara/313",
+            },
+        },
+        sleepySubtree: {
+            kind: "question",
+            question: "Do you like to sleep alone?",
+            yesSubtree: {
+                kind: "answer",
+                img: "https://api.capy.lol/v1/capybara/205",
+            },
+            noSubtree: {
+                kind: "answer",
+                img: "https://api.capy.lol/v1/capybara/133",
+            },
+        },
+        workingSubtree: {
+            kind: "answer",
+            img: "https://api.capy.lol/v1/capybara/201",
+        },
+        happySubtree: {
+            kind: "question",
+            question: "Do you like costumes?",
+            yesSubtree: {
+                kind: "answer",
+                img: "https://api.capy.lol/v1/capybara/157",
+            },
+            noSubtree: {
+                kind: "answer",
+                img: "https://api.capy.lol/v1/capybara/131",
+            },
+        },
     };
 }
