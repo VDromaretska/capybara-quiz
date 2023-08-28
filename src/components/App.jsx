@@ -70,18 +70,20 @@ export default function App() {
                 )}
                 {currentTree.kind === "answer" && (
                     <div>
-                        <p>Congrats! We found your picture.</p>
+                        <p>
+                            Congrats! We found your picture.
+                            <div className="button-container">
+                                <button onClick={() => handleBackToMain()}>
+                                    Back to main
+                                </button>
+                            </div>
+                        </p>
                         <div className="image-container">
                             <img
                                 src={currentTree.img}
                                 alt="another capy image"
                                 className="centered-image"
                             />
-                        </div>
-                        <div className="button-container">
-                            <button onClick={() => handleBackToMain()}>
-                                Back to main
-                            </button>
                         </div>
                     </div>
                 )}
