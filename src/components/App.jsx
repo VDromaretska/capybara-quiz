@@ -31,6 +31,9 @@ export default function App() {
     const handleNo = () => {
         setCurrentTree(currentTree.noSubtree);
     };
+    const handleBackToMain = () => {
+        setCurrentTree(createCapyTree());
+    };
     return (
         <div>
             <div className="section-blue">
@@ -74,6 +77,11 @@ export default function App() {
                                 alt="another capy image"
                                 className="centered-image"
                             />
+                        </div>
+                        <div className="button-container">
+                            <button onClick={() => handleBackToMain()}>
+                                Back to main
+                            </button>
                         </div>
                     </div>
                 )}
